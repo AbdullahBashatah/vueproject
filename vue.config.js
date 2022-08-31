@@ -1,4 +1,4 @@
-const VueConf = require('@vue/conf');
-VueConf({
-  // baseUrl/assetsDir/devServer/... conf in here
-});
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+  transpileDependencies: true
+})
